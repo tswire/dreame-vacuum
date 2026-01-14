@@ -707,9 +707,9 @@ class DreameVacuumFlowHandler(ConfigFlow, domain=DOMAIN):
 
         country_list = ["eu", "cn", "us", "ru", "sg"]
         if self.account_type == ACCOUNT_TYPE_MOVA:
-            country_list.pop(2)
+            country_list.pop(3)
         elif self.account_type == ACCOUNT_TYPE_TROUVER:
-            country_list.pop(1)
+            country_list.pop(2)
 
         return vol.Schema(
             {
